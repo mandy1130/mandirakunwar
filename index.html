@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mandira Kunwar - Architectural Designer</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .arch-gradient {
+            background: linear-gradient(135deg, #2d3436 0%, #636e72 100%);
+        }
+        .dark .arch-gradient {
+            background: linear-gradient(135deg, #1a1a1a 0%, #404040 100%);
+        }
+        .project-card:hover .project-overlay {
+            opacity: 0.9;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+    <!-- Navigation -->
+    <nav class="bg-white dark:bg-gray-800 shadow-lg fixed w-full z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <span class="text-xl font-bold text-teal-800 dark:text-teal-400">MK Architects</span>
+                <div class="flex items-center space-x-6">
+                    <button id="darkModeToggle" class="text-gray-600 dark:text-gray-300">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <div class="hidden md:flex space-x-8">
+                        <a href="#projects" class="text-gray-600 dark:text-gray-300 hover:text-teal-800">Projects</a>
+                        <a href="#about" class="text-gray-600 dark:text-gray-300 hover:text-teal-800">About</a>
+                        <a href="#experience" class="text-gray-600 dark:text-gray-300 hover:text-teal-800">Experience</a>
+                        <a href="#contact" class="text-gray-600 dark:text-gray-300 hover:text-teal-800">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+<section class="hero-bg pt-24 pb-12 text-white relative">
+    <div class="max-w-6xl mx-auto px-4 md:flex items-center relative z-10">
+        <div class="md:w-1/2">
+            <h1 class="text-4xl font-bold mb-4">Mandira Kunwar</h1>
+            <p class="text-xl mb-6">Architecture Student & Designer<br>
+            Himalayan College of Engineering, Lalitpur</p>
+            <a href="#projects" class="bg-white text-green-500 px-6 py-3 rounded-lg font-semibold hover:bg-opacity-70">
+                View Portfolio
+            </a>
+        </div>
+        <div class="md:w-1/2 mt-8 md:mt-0">
+            <div class="relative rounded-full overflow-hidden w-3/4 mx-auto border-4 border-white shadow-xl">
+                <img src="mandira.jpg" alt="Mandira Kunwar" class="relative z-10 block w-full">
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .hero-bg {
+        background: linear-gradient(rgba(45, 52, 54, 0.9), rgba(99, 110, 114, 0.9)),
+                    url('hero-bg.jpg') center/cover;
+        min-height: 50vh;
+    }
+
+    .dark .hero-bg {
+        background: linear-gradient(rgba(26, 26, 26, 0.9), rgba(64, 64, 64, 0.9)),
+                    url('hero-bg-dark.jpg') center/cover;
+    }
+
+
+</style>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 bg-white dark:bg-gray-800">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 dark:text-white">Featured Projects</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Thesis Project -->
+                <div class="project-card relative rounded-lg overflow-hidden">
+                    <img src="1.jpg" alt="Thesis Project" class="w-full h-64 object-cover">
+                    <div class="project-overlay absolute inset-0 bg-teal-800 opacity-0 transition-all p-6 text-white">
+                        <h3 class="text-xl font-bold mb-2">Behind The Thread</h3>
+                        <div class="case-study-content">
+                            <p class="mb-4">Culturally emmersive space designed to celebrate and preserve the heritage of Nepali Dhaka Fabric Weaving.</p>
+                            <a href="project1.html" class="mt-4 inline-block border border-white px-4 py-2 rounded hover:bg-green-800 hover:text-teal-800">
+                                View Details →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Internship Project -->
+                <div class="project-card relative rounded-lg overflow-hidden">
+                    <img src="project-1.jpg" alt="Krithya Studio Project" class="w-full h-64 object-cover">
+                    <div class="project-overlay absolute inset-0 bg-teal-800 opacity-0 transition-all p-6 text-white">
+                        <h3 class="text-xl font-bold mb-2">Commercial Complex</h3>
+                        <div class="case-study-content">
+                            <p class="mb-4">Design for multi-functional public space in Kathmandu Valley.</p>
+                            <a href="project2.html" class="mt-4 inline-block border border-white px-4 py-2 rounded hover:bg-green-800 hover:text-teal-800">
+                                View Details →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card relative rounded-lg overflow-hidden">
+                    <img src="gumba.jpg" alt="Gumba Dormitory" class="w-full h-64 object-cover">
+                    <div class="project-overlay absolute inset-0 bg-teal-800 opacity-0 transition-all p-6 text-white">
+                        <h3 class="text-xl font-bold mb-2">Gumba Dormetory</h3>
+                        <div class="case-study-content">
+                            <p class="mb-4">A dormetory building for buddhist students in Chandragiri.</p>
+                            <a href="project3.html" class="mt-4 inline-block border border-white px-4 py-2 rounded hover:bg-green-800 hover:text-teal-800">
+                                View Details →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card relative rounded-lg overflow-hidden">
+                    <img src="interior.jpg" alt="Interior" class="w-full h-64 object-cover">
+                    <div class="project-overlay absolute inset-0 bg-teal-800 opacity-0 transition-all p-6 text-white">
+                        <h3 class="text-xl font-bold mb-2">Interior Designing</h3>
+                        <div class="case-study-content">
+                            <p class="mb-4">Asthetic Interior of buildings.</p>
+                            <a href="project4.html" class="mt-4 inline-block border border-white px-4 py-2 rounded hover:bg-green-800 hover:text-teal-800">
+                                View Details →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card relative rounded-lg overflow-hidden">
+                    <img src="vernacular.jpg" alt="Vernacular Architecture" class="w-full h-64 object-cover">
+                    <div class="project-overlay absolute inset-0 bg-teal-800 opacity-0 transition-all p-6 text-white">
+                        <h3 class="text-xl font-bold mb-2">Vernacular Architecture</h3>
+                        <div class="case-study-content">
+                            <p class="mb-4">Asigning local building practice along with local material procurement.</p>
+                            <a href="project5.html" class="mt-4 inline-block border border-white px-4 py-2 rounded hover:bg-green-800 hover:text-teal-800">
+                                View Details →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card relative rounded-lg overflow-hidden">
+                    <img src="landscape.jpg" alt="Landscape" class="w-full h-64 object-cover">
+                    <div class="project-overlay absolute inset-0 bg-teal-800 opacity-0 transition-all p-6 text-white">
+                        <h3 class="text-xl font-bold mb-2">Landscape Design</h3>
+                        <div class="case-study-content">
+                            <p class="mb-4">Designing Landscape in-order to incoperate the final structure over the site.</p>
+                            <a href="project6.html" class="mt-4 inline-block border border-white px-4 py-2 rounded hover:bg-green-800 hover:text-teal-800">
+                                View Details →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-16 bg-gray-50 dark:bg-gray-900">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 dark:text-white">Professional Journey</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="p-6 bg-white dark:bg-gray-800 rounded-lg shadow">
+                    <h3 class="text-xl font-bold mb-2 dark:text-white">Freelancing</h3>
+                    <p class="text-gray-600 dark:text-gray-300">The freelancing projects are:</p>
+                    <ul class="list-disc pl-6 mt-2 dark:text-gray-300">
+                        <li>Gumba-Dormitory</li>
+                        <li>Shah Reidence</li>
+                        <li>Bhairahawa Residence Interior</li>
+                    </ul>
+                </div>
+                <div class="p-6 bg-white dark:bg-gray-800 rounded-lg shadow">
+                    <h3 class="text-xl font-bold mb-2 dark:text-white">Krithya Studio Internship</h3>
+                    <p class="text-gray-600 dark:text-gray-300">6-month intensive internship focusing on:</p>
+                    <ul class="list-disc pl-6 mt-2 dark:text-gray-300">
+                        <li>3D modeling and rendering</li>
+                        <li>Site analysis and planning</li>
+                        <li>Client presentations</li>
+                    </ul>
+                </div>
+                <div class="p-6 bg-white dark:bg-gray-800 rounded-lg shadow">
+                    <h3 class="text-xl font-bold mb-2 dark:text-white">Academic Projects</h3>
+                    <p class="text-gray-600 dark:text-gray-300">Notable university projects include:</p>
+                    <ul class="list-disc pl-6 mt-2 dark:text-gray-300">
+                        <li>Sustainable school design</li>
+                        <li>Urban regeneration proposal</li>
+                        <li>Modular housing system</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white dark:bg-gray-800">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-8 dark:text-white">Get in Touch</h2>
+            <div class="flex justify-center space-x-6 mb-8">
+                <a href="https://www.instagram.com/mandirakunwar/" target="_blank" class="text-blue-800 dark:text-blue-400 hover:text-blue-600">
+                    <i class="fab fa-instagram text-3xl"></i>
+                </a>
+                <a href="mailto:mandirakunwar20@gmail.com" class="text-blue-800 dark:text-blue-400 hover:text-blue-600">
+                    <i class="fas fa-envelope text-3xl"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/mandira-kunwar-ba7235291/" target="_blank" class="text-blue-800 dark:text-blue-400 hover:text-blue-600">
+                    <i class="fab fa-linkedin text-3xl"></i>
+                </a>
+            </div>
+            <!-- Add this right below the social links section in the Contact section -->
+            <div class="max-w-xl mx-auto mt-12">
+                <form id="contactForm" class="space-y-6 text-left">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="name" class="block text-gray-700 dark:text-gray-300 mb-2">Full Name</label>
+                            <input type="text" id="name" name="name" required 
+                                class="w-full px-4 py-2 border rounded-lg dark:bg-gray-700 dark:border-gray-600
+                                    focus:ring-2 focus:ring-teal-500 focus:border-transparent"
+                                minlength="3">
+                            <div class="error-message text-red-500 text-sm mt-1 hidden" data-error="name">
+                                Please enter at least 3 characters
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="email" class="block text-gray-700 dark:text-gray-300 mb-2">Email</label>
+                            <input type="email" id="email" name="email" required
+                                class="w-full px-4 py-2 border rounded-lg dark:bg-gray-700 dark:border-gray-600
+                                    focus:ring-2 focus:ring-teal-500 focus:border-transparent"
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                            <div class="error-message text-red-500 text-sm mt-1 hidden" data-error="email">
+                                Please enter a valid email address
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="subject" class="block text-gray-700 dark:text-gray-300 mb-2">Subject</label>
+                        <input type="text" id="subject" name="subject" required
+                            class="w-full px-4 py-2 border rounded-lg dark:bg-gray-700 dark:border-gray-600
+                                focus:ring-2 focus:ring-teal-500 focus:border-transparent"
+                            minlength="5">
+                        <div class="error-message text-red-500 text-sm mt-1 hidden" data-error="subject">
+                            Subject must be at least 5 characters
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="message" class="block text-gray-700 dark:text-gray-300 mb-2">Message</label>
+                        <textarea id="message" name="message" rows="4" required
+                            class="w-full px-4 py-2 border rounded-lg dark:bg-gray-700 dark:border-gray-600
+                                focus:ring-2 focus:ring-teal-500 focus:border-transparent"
+                            minlength="10"></textarea>
+                        <div class="error-message text-red-500 text-sm mt-1 hidden" data-error="message">
+                            Message must be at least 10 characters
+                        </div>
+                    </div>
+
+                    <button type="submit" 
+                        class="w-full bg-blue-800 text-white px-6 py-3 rounded-lg font-semibold
+                               hover:bg-blue-700 transition-colors dark:bg-blue-600 dark:hover:bg-blue-500">
+                    Send Message
+                    </button>
+                </form>
+                
+                <!-- Success Message -->
+                <div id="successMessage" class="mt-4 p-4 bg-green-100 text-green-700 rounded-lg hidden
+                                            dark:bg-green-800 dark:text-green-200">
+                    Message sent successfully! I'll respond within 24 hours.
+                </div>
+            </div>
+
+            <script>
+                // Form Validation
+                const form = document.getElementById('contactForm');
+                const errorMessages = document.querySelectorAll('.error-message');
+                const successMessage = document.getElementById('successMessage');
+
+                const showError = (field, messageElement) => {
+                    field.classList.add('border-red-500');
+                    messageElement.classList.remove('hidden');
+                };
+
+                const hideError = (field, messageElement) => {
+                    field.classList.remove('border-red-500');
+                    messageElement.classList.add('hidden');
+                };
+
+                const validateField = (field) => {
+                    const errorElement = document.querySelector(`[data-error="${field.id}"]`);
+                    
+                    if (field.validity.valid) {
+                        hideError(field, errorElement);
+                        return true;
+                    }
+
+                    showError(field, errorElement);
+                    return false;
+                };
+
+                // Real-time Validation
+                document.querySelectorAll('input, textarea').forEach(field => {
+                    field.addEventListener('input', () => {
+                        validateField(field);
+                    });
+                    
+                    field.addEventListener('blur', () => {
+                        validateField(field);
+                    });
+                });
+
+                // Form Submission
+                form.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    let formIsValid = true;
+                    
+                    // Validate all fields
+                    document.querySelectorAll('input, textarea').forEach(field => {
+                        if (!validateField(field)) formIsValid = false;
+                    });
+
+                    if (formIsValid) {
+                        // Here you would typically send the form data to a server
+                        successMessage.classList.remove('hidden');
+                        form.reset();
+                        
+                        // Hide success message after 5 seconds
+                        setTimeout(() => {
+                            successMessage.classList.add('hidden');
+                        }, 5000);
+                    }
+                });
+            </script>
+            <p class="text-gray-600 dark:text-gray-300 mt-8">Based in Kathmandu, Nepal | Open for design collaborations</p>
+        </div>
+    </section>
+    
+
+    <script>
+        // Dark Mode Toggle
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+
+        darkModeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark');
+            const icon = darkModeToggle.querySelector('i');
+            icon.classList.toggle('fa-moon');
+            icon.classList.toggle('fa-sun');
+        });
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Project Card Hover
+        document.querySelectorAll('.project-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.querySelector('.project-overlay').style.opacity = '0.7';
+                card.querySelector('.project-overlay').style.transform = 'translateY(0)';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.querySelector('.project-overlay').style.opacity = '0';
+                card.querySelector('.project-overlay').style.transform = 'translateY(100%)';
+            });
+        });
+    </script>
+    <style>
+        .video-container {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+    
+        .video-background {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            min-width: 100%;
+            min-height: 100%;
+            object-fit: cover;
+            z-index: 0;
+        }
+    
+        .video-overlay {
+            z-index: 1;
+        }
+    
+        @media (max-width: 768px) {
+            .video-background {
+                display: none;
+            }
+            .arch-gradient {
+                background: linear-gradient(135deg, #2d3436 0%, #636e72 100%);
+            }
+        }
+    </style>
+    
+    
+</body>
+</html>
